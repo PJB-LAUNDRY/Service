@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry service</title>
+    <link rel="stylesheet" href="lundry.css">
+    <link rel="stylesheet" href="lov.css">
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik:wght@300;700&display=swap" rel="stylesheet">
+
+<body>
+    <!--Link-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/taras-d/images-grid/src/images-grid.min.css">
+    <link rel="stylesheet" href="Page3.css">
+	
+    <!--Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="code.jquery.com/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/taras-d/images-grid/src/images-grid.min.js"></script>
+  </head>
+  <script src="index.js"></script>
+  <body>
+  <!--Web Body-->
+  <style>
+  .log{
+  
+    background-image: url(PJB\ LAUNDRY\ \(1\)\ \(1\).gif);
+    background-repeat:repeat;
+    background-size: cover;
+   }
+  @media (max-width: 768px) {
+    body{
+      margin: 0;
+      padding:0;
+
+    }
+  .log {
+  padding-top: 0;
+    max-width: 10em;
+    width: 100%;
+     position: relative;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+} 
+
+  </style>
+  <div class="container-fluid NO_PADDING stepBox">
+      <div class="step">
+        <div class=" color hand">
+
+        </div>
+       <img src="PJB LAUNDRY (1) (1).gif" alt="" class="log">
+
+      </div>
+  </div>
+  
+  <div class="container-fluid NO_PADDING option-provided">
+  <!--Mobile Card for Selected Hotel -->
+    <div class="m-selected-hotel card style="background-color:blue">
+      <div class="row NO_MARGIN">
+        <div class="m-hotel-img col-xs-12 col-sm-5 NO_PADDING">
+          <img class="m-leftImg" src="AnyConv.com__download (1).jpg" alt="Princess"></img>        
+          <img class="m-rightImg" src="AnyConv.com__images.jpg" alt="Princess"></img>
+        </div>
+        <div class="m-package-intro col-xs-12 col-sm-7">
+          <div class="m-card-block">
+            <h4 class="m-card-title">Princesses</h4>
+          </div>
+          <div class="m-price-block NO_BORDER">
+            <div class="m-desc m-left-desc">
+              <p class="m-card-text total">Time Within</p>
+            </div>
+            <div class="m-desc m-right-desc">
+              <p class="m-total-price NO_MARGIN"><model class="m-total-currency"></model>24h</p>
+            </div>
+          </div>
+          <div class="m-detail">
+            <a role="button" class="m-detail-btn hand" data-toggle="modal" href="#packageModal" aria-expanded="false" aria-controls="packageModal">SHOW DETAILS</a>
+          </div>
+          <!--Hotel Package Modal -->
+            <div id="packageModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header card-header-title">
+                    <h4 class="modal-title card-element-title">Princess</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card-content clearfix">
+                      <div class="card">
+                        <div class="card-block hotel-details">
+                          <div class="desc">
+                            <p class="card-text detail"> Target audience:
+                              <p class="card-text">MU outside students and hostel residents are considered non-students</p>
+                            </div>
+                          <div class="desc left-desc">
+                            <p class="card-text detail">Check-in<model>After 6pm</model></p>
+                            <p class="card-text">Open from <time>7:00</time> to <time>21:00</time> </p>
+                          </div>
+                          <div class="desc right-desc">
+                            <p class="card-text detail">Check-out<model>Before 8pm</model></p>
+                            <!-- <p class="card-text">Saturday to Friday</p> -->
+                          </div>
+                          <div class="desc left-desc">
+                            <p class="card-text detail">Price:</p>
+                            <p class="card-text">Quantity-Dependent</p>
+                          </div>
+                          <div class="desc right-desc">
+                            <p class="card-text detail">Sun-Fri Workweek</p>
+                            <p class="card-text">Clothes</p>
+                          </div>
+                        </div>
+                        <div class="price-card-block">
+                          <div class="desc left-desc">
+                            <p class="card-text detail">Flat-rate:<model class="duration">Shirt-Blouse</model></p>
+                          </div>
+                          <div class="desc right-desc">
+                            <p class="room-price NO_MARGIN"><model class="room-currency">₹</model>10</p>
+                          </div>
+                          <div class="desc left-desc">
+                            <p class="card-text detail">Pants:</p>
+                          </div>
+                          <div class="desc right-desc">
+                            <p class="room-price NO_MARGIN"><model class="room-currency">₹</model>15</p>
+                          </div>
+                        </div>
+                        <div class="price-card-block NO_BORDER">
+                          <div class="desc left-desc">
+                            <p class="card-text total">Time Within</p>
+                          </div>
+                          <div class="desc right-desc">
+                            <p class="total-price NO_MARGIN"><model class="total-currency"> </model>24h </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Web Card for Selected Hotel -->
+    <div class="optionBox">
+      <div class="special-req option">
+        <a class="option-title hand"><model>SPECIAL REQUEST</model></a>
+        <div class="content">
+          <div class="req-input">
+            <textarea class="req-text" rows="4" cols="50" placeholder="Respected noble ,What do you like to request please? We are happy to serve you"></textarea>
+          </div>
+        </div>
+       </div>
+      <div class="add-on option">
+        <a class="option-title hand"><model>SHOWS UP SERVICES</model></a>
+        <div class="content">
+          <div class="add-on-list">
+            <div class="extra-bed service-provided">
+              <div class="service">
+                <p class="NO_MARGIN">Sheets <br>
+                  <model class="currency">A pair <br></model>
+                  <model class="price">₹50</model>
+                </p>
+              </div>
+              <div class="qty-box">
+                <div class="quantity">
+                  <label>QUANTITY LMT</label>
+                  <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-left-btn">
+                        </div>
+                        <input type="text" id="myNumber" class="form-control input-number NO_PADDING" value="150" />
+                        <div class="input-right-btn">
+                            <button id="up" class="plus NO_PADDING"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="massage service-provided">
+              <div class="service">
+                <p class="NO_MARGIN">Jumpers/Jackets<br>
+                  <model class="currency">Each</model>
+                  <model class="price">₹70<br></model>
+                </p>
+              </div>
+              <div class="qty-box">
+                <div class="quantity">
+                  <label>QUANTITY LIMIT</label>
+                  <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-left-btn">
+                        </div>
+                        <input type="text" id="myNumber" class="form-control input-number NO_PADDING" value="90" />
+                        <div class="input-right-btn">
+                            <button id="up" class="plus NO_PADDING"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="baby service-provided">
+              <div class="service">
+                <p class="NO_MARGIN">Blankets or Duvets<br>
+                  <model class="currency">Each</model>
+                  <model class="price">₹100</model>
+                </p>
+              </div>
+              <div class="qty-box">
+                <div class="quantity">
+                  <label>QUANTITY LIMIT</label>
+                  <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-left-btn">
+                        </div>
+                        <input type="text" id="myNumber" class="form-control input-number NO_PADDING" value="30" />
+                        <div class="input-right-btn">
+                            <button id="up" class="plus NO_PADDING"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="laundry service-provided">
+              <div class="service">
+                <p class="NO_MARGIN">Suites/dry cleaning<br>
+                  <model class="currency">each</model>
+                  <model class="price">₹150</model>
+                </p>
+                <p class="NO_MARGIN">Shoes<br>
+                  <model class="currency"> A pair</model>
+                  <model class="price">₹30</model>
+                </p>
+              </div>
+              
+              <div class="toggle-box">
+                <div class="toggle-container">
+                <div class="onoffswitch">
+                  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                  <label class="onoffswitch-label" for="myonoffswitch"></label>
+                </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="admission option">
+        <a class="hand option-title"><model>FOR MORE INFO</model></a>
+        <div class="content">
+          <div class="req-input">
+            <div class="adult-theme-park service-provided">
+              <div class="service">
+                <p class="NO_MARGIN">Contact us<br>
+                </p>
+              </div>
+              <div >
+                <div >
+                  <div >
+                    <div class="input-grou">
+                        <div class="input-left-bt">
+                        </div>
+                        <input type="text" class="form-control input-number NO_PADDING" value="+919904594227" />
+                        <div class="input-right-btn">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="child-theme-park service-provided">
+              <div class="service">
+                <q class="NO_MARGIN">
+                  <h6 style="font-size:8px; background-color:black; color :white;">“The big secret in life is that there is no big secret. Whatever your goal, you can get there if you're willing to work.” — Oprah Winfrey</h6>                  <br>
+                </q>
+              </div>
+              <div class="qty-box">
+                <div class="quantity">
+                  <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-left-btn">
+                        </div>
+                        <input type="text" id="myNumber" class="form-control input-number NO_PADDING" value="Life" />
+                        <div class="input-right-btn">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="adult-water-park service-provided">
+              <div class="service">
+                </p>
+              </div>
+              <div class="">
+                <div class="">
+                  <div class="">
+                    <div class="input-group">
+                        <div class="input-left-btn">
+                        </div>
+                        <input type="text" id="myNumber" class="form-control input-number NO_PADDING" value="Start up" />
+                        <div class="input-right-btn">
+                            <button id="up" class="plus NO_PADDING"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="child-water-park service-provided">
+              <div class="service">
+             
+              </div>
+              <div class="qty-box">
+                <div class="quantity">
+                  <div class="form-group">
+                    <div class="input-group">
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="autobots service-provided">
+              <div class="service">
+                <p class="NO_MARGIN"><br>
+                  <model class="currency"></model>
+                  <model class="price"></model>
+                </p>
+              </div>
+              <div class="qty-box">
+                <div class="quantity">
+                 <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-left-btn">
+                        </div>
+                        <div class="input-right-btn navbar-toggle collapsed">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!-- #F0F3FA #01B8F1 #02BDF4 -->
+      <div class="banner hand">
+        <div class="advertisement">
+          <input type="checkbox" class="wm-power"> Do laundry
+          <div id="washing-machine">
+            <div class="wm-body">
+              <div class="wm-buttons"></div>
+              <div class="wm-center">
+                <div class="wm-container">
+                  <div class="wm-clothes"></div>
+                </div>
+              </div>
+            </div>
+            <div class="wm-footer"></div>
+          </div>
+          <hr/>
+        </div>
+      </div>
+      <div class="continue">
+        <div class="continue-btn">
+          
+        </div>
+      </div>
+      <div class="m-continue">
+        <div class="m-continue-btn">
+        
+        </div>
+      </div>
+    </div>
+    <div class="selected-hotel">
+      <div class="card">
+        <div class="hotel-img">
+          <img class="leftImg" src="AnyConv.com__download (1).jpg" alt="Princess"></img>
+          <img class="rightImg" src="AnyConv.com__images.jpg" alt="Princess"></img>
+        </div>
+        <div class="card-block hotel-details">
+          <h4 class="card-title hotel-name">Princess</h4>
+          <div class="desc">
+            <p class="card-text detail">Target audience:</p>
+            <p class="card-text">MU outside students and hostel residents are considered non-students</p>
+          </div>
+          <div class="desc left-desc">
+            <p class="card-text detail">Check-in<model>After 6pm</model></p>
+            <p class="card-text">Open from 7:00 to 21:00</p>
+          </div>
+          <div class="desc right-desc">
+            <p class="card-text detail">Check-out<model>Before 8pm</model></p>
+            <p class="card-text detail">Time Within<model>24h</model></p>
+          </div>
+          <div class="desc left-desc">
+            <p class="card-text detail">Price:</p>
+            <p class="card-text">Quantity-Dependent</p>
+          </div>
+          <div class="desc right-desc collapse">
+            <p class="card-text detail">Sun-Fri Workweek</p>
+            <p class="card-text">Clothes</p>
+          </div>
+        </div>
+        <div class="price-card-block">
+          <div class="desc left-desc">
+            <p class="card-text detail">Flat-rate:<model class="duration">Shirt-Blouse</model></p>
+          </div>
+          <div class="desc right-desc">
+            <p class="room-price NO_MARGIN"><model class="room-currency">₹ </model>10</p>
+          </div>
+          <div class="desc left-desc">
+            <p class="card-text detail">Pants:</p>
+          </div>
+          <div class="desc right-desc">
+            <p class="room-price NO_MARGIN"><model class="room-currency">₹ </model>15</p>
+          </div>
+        </div>
+        <div class="price-card-block NO_BORDER">
+          <div class="desc left-desc">
+          </div>
+          <div class="desc right-desc">
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <!--Footer-->
+  <div class="footer">
+    <div class="footerBox pc">
+
+      <div class="footerLeftLine">
+        <div class="box-canvas">
+          <div class="machine">
+            <div class="drawer"> </div>
+            <div class="panel"></div>
+            <div class="door">
+              <div class="drum"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="washer">
+        <div class="top-line"></div>
+        <div class="light washer-on"></div>
+        <div class="light washer-off"></div>
+        <div class="washer-door">
+          <div class="washer-load"></div>
+        </div>
+</div>
+
+<!--Only import after DOM created-->
+<script src="lundry.js"></script>
+
+</body>
+</html>
+</body>
+</html>
+                    <hr class="intro-divider">
+                    <ul class="list-inline intro-social-buttons">
+
+
+                      <!-- here we go -->
+                    </ul>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+                 
+      </div>
+    
+      </div>
+      </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+      
+      <!--Side Nav Bar-->
+      
+    
+     
